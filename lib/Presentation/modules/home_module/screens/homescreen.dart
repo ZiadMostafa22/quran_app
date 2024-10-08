@@ -17,9 +17,9 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
   List<Widget> tabs = [
     Quraantab(),
+    HadeethTabScreen(),
     const TasbeehTab(),
     const RadioTab(),
-    const HadeethTab(),
   ];
 
   int selectedindex = 0;
@@ -40,6 +40,7 @@ class _HomescreenState extends State<Homescreen> {
           title: const Text(StringsManager.appTitle),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          iconSize: 35,
           currentIndex: selectedindex,
           onTap: (index) {
             selectedindex = index;
