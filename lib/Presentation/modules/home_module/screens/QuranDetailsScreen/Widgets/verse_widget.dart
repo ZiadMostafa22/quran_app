@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 
 class VerseWidget extends StatelessWidget {
   VerseWidget({super.key, required this.verse});
-
   String verse;
-
-//TODO i
   @override
   Widget build(BuildContext context) {
     return Card(
