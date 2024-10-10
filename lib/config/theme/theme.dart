@@ -12,12 +12,11 @@ class theme {
       dividerColor: ColorManager.goldColor,
       cardTheme: CardTheme(
         margin: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        color: Colors.white,
+        color: Color(0xFFB7935F).withOpacity(.8),
         elevation: 14,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
       ),
+      indicatorColor: Colors.white,
       textTheme: TextTheme(
           headlineMedium: TextStyle(
             fontSize: 21,
@@ -28,7 +27,9 @@ class theme {
             fontSize: 19,
             color: Colors.black,
             fontWeight: FontWeight.w400,
-          )),
+          ),
+          bodyMedium: TextStyle(
+              color: Colors.white, fontSize: 25, fontWeight: FontWeight.w500)),
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: const AppBarTheme(
           centerTitle: true,
